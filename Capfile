@@ -13,6 +13,5 @@ set :user, 'deploy'
 role :web, domain
 
 before 'deploy:update_code' do
-  run_locally 'rm -rf build/*'
-  run_locally 'middleman build'
+  run_locally 'middleman build -c'
 end
