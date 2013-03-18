@@ -1,0 +1,66 @@
+.index {
+  background: #2E2E2E;
+  color: #BABABA;
+
+  .icon {
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    font-family: 'RaphaelIcons';
+    font-size: 1.1em;
+    position: relative;
+    top: 0.1em;
+  }
+
+  .avatar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background: url('../images/background.gif') center bottom no-repeat;
+
+  }
+
+  .me {
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-family: 'code_lightregular';
+    color: #BC7634;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+  }
+
+  a {
+    color: #BABABA;
+    text-decoration: none;
+    @include transition-property(color);
+    @include transition-duration(0.1s);
+    @include transition-timing-function(ease-out);
+
+    &:hover {
+      color: #BC7634;
+    };
+  }
+
+  strong {
+    color: #BC7634;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .icon {
+    font-size: 4em;
+    margin-right: 0.5em;
+  }
+}
