@@ -33,3 +33,9 @@ body {
   font-weight: lighter;
   font-size: 21 px;
 }
+
+* {
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
