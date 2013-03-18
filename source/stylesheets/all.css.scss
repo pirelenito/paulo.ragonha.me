@@ -39,3 +39,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
+
+// fix for font face rendering on iOS
+// http://stackoverflow.com/questions/5069752/ios-4-2-webfont-ttf-s-bold-font-weight-rendering-bug
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+}
