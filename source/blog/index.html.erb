@@ -1,8 +1,23 @@
-<% page_articles.each_with_index do |article, i| %>
-  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <%= article.summary %>
-<% end %>
+<div class='header-container'>
+  <div class='header'>
+    <span class='blog-by'>Paulo Ragonha</span>
+    <span class='headline'>, the frantic developer.</span>
+    <a class='blog-link' href="/blog" title='All entries'><span>All entries</span></a>
+    <a class='home-link' href="/" title='About me'><span>About me</span></a>
+  </div>
+</div>
 
-<p>coming soon...</p>
+<ol>
+  <% page_articles.each_with_index do |article, i| %>
+    <li>
+      <article>
+        <h1><%= link_to article.title, article %></h1>
+
+        <p class='publish-date'>Posted by <a href="/">Paulo Ragonha</a> on <time><%= article.date.strftime('%e %B, %Y') %></time></p>
+        <%= article.summary(200) %>
+
+        <%= link_to 'Continue reading...', article %>
+      </article>
+    </li>
+  <% end %>
+</ol>
