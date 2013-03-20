@@ -1,0 +1,29 @@
+$HOME_ICON: 'S';
+$BLOG_ICON: 'Û';
+
+@include font-face('RaphaelIcons',
+  font-files(
+    'raphaelicons-webfont.woff',
+    'raphaelicons-webfont.ttf',
+    'raphaelicons-webfont.svg')
+  );
+
+.icon {
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    font-family: 'RaphaelIcons';
+  }
+
+@mixin icon-font {
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  font-family: 'RaphaelIcons';
+}
+
+@mixin replace-by-icon($char) {
+  @include icon-font;
+  p { display: none; }
+  &:before { content: $char;}
+}

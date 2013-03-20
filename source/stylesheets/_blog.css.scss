@@ -10,8 +10,6 @@
   background: rgb(230, 230, 230);
 
   .blog-link, .home-link {
-    @include icon-font;
-
     float: right;
     font-size: 2em;
 
@@ -19,21 +17,17 @@
     margin-left: 1em;
     color: rgb(119, 119, 119);
 
-    p {
-      display: none;
-    }
-
     &:hover {
       color: white;
     }
   }
 
-  .blog-link:before {
-    content: 'Û';
+  .home-link {
+    @include replace-by-icon($HOME_ICON);
   }
 
-  .home-link:before {
-    content: 'S';
+  .blog-link {
+    @include replace-by-icon($BLOG_ICON);
   }
 
   .header-container {
