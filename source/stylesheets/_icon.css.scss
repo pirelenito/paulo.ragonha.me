@@ -24,6 +24,6 @@ $BLOG_ICON: 'Û';
 
 @mixin replace-by-icon($char) {
   @include icon-font;
-  p { display: none; }
+  span { display: none; }
   &:before { content: $char;}
 }
