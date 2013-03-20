@@ -2,11 +2,15 @@
   background: #2E2E2E;
   color: #BABABA;
 
-  .icon {
-    font-size: 1.1em;
-    position: relative;
-    top: 0.1em;
+  .github-link, .blog-link, .twitter-link, .linkedin-link {
+    font-size: 4em;
+    margin-right: 0.5em;
   }
+
+  .github-link { @include replace-by-icon($GITHUB_ICON) };
+  .blog-link { @include replace-by-icon($BLOG_ICON) };
+  .twitter-link { @include replace-by-icon($TWITTER_ICON) };
+  .linkedin-link { @include replace-by-icon($LINKEDIN_ICON) };
 
   .avatar {
     position: fixed;
@@ -53,10 +57,5 @@
   p {
     font-size: 1em;
     line-height: 1.4em;
-  }
-
-  .icon {
-    font-size: 4em;
-    margin-right: 0.5em;
   }
 }

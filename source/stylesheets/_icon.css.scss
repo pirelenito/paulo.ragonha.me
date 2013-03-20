@@ -1,5 +1,8 @@
 $HOME_ICON: 'S';
 $BLOG_ICON: 'Û';
+$GITHUB_ICON: 'U';
+$TWITTER_ICON: '^';
+$LINKEDIN_ICON: 'T';
 
 @include font-face('RaphaelIcons',
   font-files(
@@ -7,13 +10,6 @@ $BLOG_ICON: 'Û';
     'raphaelicons-webfont.ttf',
     'raphaelicons-webfont.svg')
   );
-
-.icon {
-    font-weight: normal;
-    font-style: normal;
-    line-height: normal;
-    font-family: 'RaphaelIcons';
-  }
 
 @mixin icon-font {
   font-weight: normal;
