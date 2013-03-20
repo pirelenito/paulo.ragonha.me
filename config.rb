@@ -59,6 +59,8 @@ activate :blog do |blog|
   blog.permalink = ":year/:month/:title.html"
 end
 
+activate :asset_hash
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
