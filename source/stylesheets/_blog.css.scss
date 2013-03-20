@@ -9,6 +9,48 @@
 .blog {
   background: rgb(230, 230, 230);
 
+  .blog-link, .home-link {
+    float: right;
+    font-size: 2em;
+
+    text-decoration: none;
+    margin-left: 1em;
+    color: rgb(119, 119, 119);
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .header-container {
+    background: #2E2E2E;
+  }
+
+  .header {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em 0;
+
+    .blog-by {
+      font-family: 'code_lightregular';
+      margin: 0;
+      color: #BC7634;
+      font-size: 2em;
+      letter-spacing: 0.1em;
+    }
+
+    .headline {
+      color: rgb(119, 119, 119);
+      font-size: 1.2em;
+      display: none;
+
+      @media screen and (min-width: 800px) {
+        display: inline;
+      }
+    }
+  }
+
   article {
     width: 90%;
     max-width: 900px;
@@ -23,6 +65,7 @@
       font-size: 4em;
       text-align: center;
       margin-bottom: 0;
+      margin-top: 40px;
     }
 
     .publish-date {
