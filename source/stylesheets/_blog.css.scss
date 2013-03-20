@@ -73,16 +73,6 @@
       font-size: 2em;
       letter-spacing: 0.1em;
     }
-
-    .headline {
-      color: rgb(119, 119, 119);
-      font-size: 1.2em;
-      display: none;
-
-      @media screen and (min-width: 800px) {
-        display: inline;
-      }
-    }
   }
 }
 
