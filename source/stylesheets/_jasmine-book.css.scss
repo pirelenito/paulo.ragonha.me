@@ -1,0 +1,32 @@
+.jasmine-book {
+  background: #2E2E2E;
+  color: #BABABA;
+
+  h1, h2 {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: #BC7634;
+    letter-spacing: 0.1em;
+  }
+
+  h1 {
+    margin-top: 200px;
+    font-size: 3em
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  a {
+    color: #BABABA;
+    text-decoration: none;
+    @include transition-property(color);
+    @include transition-duration(0.1s);
+    @include transition-timing-function(ease-out);
+
+    &:hover {
+      text-decoration: underline;
+    };
+  }
+}
