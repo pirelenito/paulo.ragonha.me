@@ -13,9 +13,10 @@
         <h1><%= link_to article.title, article %></h1>
 
         <p class='publish-date'>Posted by <a href="/">Paulo Ragonha</a> on <time><%= article.date.strftime('%e %B, %Y') %></time></p>
-        <%= article.summary(200) %>
+        <%= article.summary %>
 
-        <%= link_to 'Continue reading...', article %>
+
+        <%= link_to 'Continue reading...', article if article.data['read_more'] %>
       </article>
     </li>
   <% end %>

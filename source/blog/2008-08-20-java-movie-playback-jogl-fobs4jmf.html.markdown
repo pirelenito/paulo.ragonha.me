@@ -1,12 +1,15 @@
 ---
 title: 'Java movie playback: JOGL + Fobs4JMF'
 date: 2008/08/20
+read_more: true
 ---
 Recently I had to integrate video playback on my job's Java OpenGL engine, which uses [JOGL](https://jogl.dev.java.net).
 
 Java has a support to media playback through it's [Java Media Framework](http://java.sun.com/javase/technologies/desktop/media/jmf/), which unfortunately, on it's current version (2.1.1e) does not support many [formats for video playback](http://java.sun.com/javase/technologies/desktop/media/jmf/2.1.1/formats.html).
 
 So I quickly looked for alternatives, including [IBM Toolkit for mpeg4](http://www.alphaworks.ibm.com/tech/tk4mpeg4), that hadn't a sufficient production performance I was looking for, and didn't offer an easy option for frame grabbing or plugin extensions as JMF does. Next was [Fobs4JMF](http://fobs.sourceforge.net/), which is [JMF](http://java.sun.com/javase/technologies/desktop/media/jmf/) + [ffmpeg](http://ffmpeg.org). This solution was much more interesting, since it offers a wide variety of codecs (ogg, mp3, m4a, divx, xvid, h264, mov, etc) and is based on the solid ffmpeg solution to decode audio and video.
+
+READMORE
 
 My implementation, uses the plug-in capabilities of JMF to extend a custom renderer that does a pixel type conversion and rendering to a texture:
 

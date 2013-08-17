@@ -1,9 +1,12 @@
 ---
 title: 'Fixing Wii noisy drive'
 date: 2008/07/14
+read_more: true
 ---
 
 It's been more than 6 months that my Wii was producing an awful lawn mower sound in the disk drive, and I finally decided to open it up and "try" to fix the problem.
+
+READMORE
 
 Since I've seen other people with similar problems on YouTube, such as:
 
