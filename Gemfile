@@ -7,3 +7,7 @@ gem "middleman-blog"
 gem "nokogiri"
 gem "middleman-syntax"
 gem "redcarpet"
+
+group :development do
+  gem "capistrano"
+end
