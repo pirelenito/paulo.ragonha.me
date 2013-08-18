@@ -10,14 +10,17 @@
   li {
     margin-bottom: 80px;
   }
+}
 
+article {
   h1 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 2em;
     margin-bottom: 0.3em;
+    color: #BC7634;
   }
 
-  article p {
+  p {
     font-size: 1.2em;
     line-height: 1.4;
   }
@@ -27,10 +30,14 @@
     margin: 0;
     line-height: 1em;
   }
+
+  li {
+    margin-bottom: 10px;
+  }
 }
 
 .blog {
-  background: rgb(230, 230, 230);
+  background: #FFFFFF;
 
   a {
     color: #BC7634;
@@ -44,29 +51,26 @@
     };
   }
 
-  .blog-link, .home-link {
+  .github-link, .twitter-link, .linkedin-link {
     float: right;
-    font-size: 2em;
+    font-size: 3em;
 
     text-decoration: none;
     margin-left: 1em;
-    color: rgb(119, 119, 119);
+    color: white;
 
     &:hover {
       color: white;
     }
   }
 
-  .home-link {
-    @include replace-by-icon($HOME_ICON);
-  }
-
-  .blog-link {
-    @include replace-by-icon($BLOG_ICON);
-  }
+  .github-link { @include replace-by-icon($GITHUB_ICON) };
+  .twitter-link { @include replace-by-icon($TWITTER_ICON) };
+  .linkedin-link { @include replace-by-icon($LINKEDIN_ICON) };
 
   .header-container {
-    background: #2E2E2E;
+    background: #2B7199;
+    margin-bottom: 2em;
   }
 
   .header {
@@ -78,11 +82,10 @@
     a:hover { text-decoration: none; }
 
     .blog-by {
-      font-family: 'code_lightregular';
+      font-family: 'Noto Sans', sans-serif;
       margin: 0;
-      color: #BC7634;
+      color: white;
       font-size: 2em;
-      letter-spacing: 0.1em;
     }
   }
 }
@@ -92,24 +95,5 @@
     width: 90%;
     max-width: 650px;
     margin: 0 auto;
-
-    h1 {
-      font-family: 'Noto Sans', sans-serif;
-      font-size: 2em;
-      margin-bottom: 0;
-      margin-top: 40px;
-    }
-
-    .publish-date {
-      color: gray;
-      margin: 0px;
-    }
-
-    font-size: 1.2em;
-    line-height: 1.4;
-
-    li {
-      margin-bottom: 10px;
-    }
   }
 }
