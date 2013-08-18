@@ -62,6 +62,7 @@ activate :blog do |blog|
   blog.layout = "blog"
   blog.permalink = ":year/:month/:title.html"
 end
+page "/blog/feed.xml", :layout => false
 
 activate :asset_hash
 
