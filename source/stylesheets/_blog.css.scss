@@ -63,16 +63,16 @@ article {
 
       a {
         margin-left: 0;
-        margin-right: 1em;
+        margin-right: 0.5em;
       }
     }
   }
 
-  .github-link, .twitter-link, .linkedin-link {
+  .github-link, .twitter-link, .linkedin-link, .rss-link {
     font-size: 3em;
 
     text-decoration: none;
-    margin-left: 1em;
+    margin-left: 0.5em;
     color: white;
 
     &:hover {
@@ -83,6 +83,7 @@ article {
   .github-link { @include replace-by-icon($GITHUB_ICON) };
   .twitter-link { @include replace-by-icon($TWITTER_ICON) };
   .linkedin-link { @include replace-by-icon($LINKEDIN_ICON) };
+  .rss-link { @include replace-by-icon($RSS_ICON) };
 
   .header-container {
     background: #2B7199;
