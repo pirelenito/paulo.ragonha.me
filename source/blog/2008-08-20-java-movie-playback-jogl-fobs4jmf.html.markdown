@@ -5,15 +5,15 @@ read_more: true
 ---
 Recently I had to integrate video playback on my job's Java OpenGL engine, which uses [JOGL](https://jogl.dev.java.net).
 
+<iframe width="100%" height="400" src="//www.youtube.com/embed/-zh6yDyasSo" frameborder="0" allowfullscreen></iframe>
+
 Java has a support to media playback through it's [Java Media Framework](http://java.sun.com/javase/technologies/desktop/media/jmf/), which unfortunately, on it's current version (2.1.1e) does not support many [formats for video playback](http://java.sun.com/javase/technologies/desktop/media/jmf/2.1.1/formats.html).
 
 So I quickly looked for alternatives, including [IBM Toolkit for mpeg4](http://www.alphaworks.ibm.com/tech/tk4mpeg4), that hadn't a sufficient production performance I was looking for, and didn't offer an easy option for frame grabbing or plugin extensions as JMF does. Next was [Fobs4JMF](http://fobs.sourceforge.net/), which is [JMF](http://java.sun.com/javase/technologies/desktop/media/jmf/) + [ffmpeg](http://ffmpeg.org). This solution was much more interesting, since it offers a wide variety of codecs (ogg, mp3, m4a, divx, xvid, h264, mov, etc) and is based on the solid ffmpeg solution to decode audio and video.
 
 READMORE
 
-My implementation, uses the plug-in capabilities of JMF to extend a custom renderer that does a pixel type conversion and rendering to a texture:
-
-<div style="text-align: center;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="425" height="344" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="src" value="http://www.youtube.com/v/-zh6yDyasSo&amp;hl=en&amp;fs=1" /><param name="allowfullscreen" value="true" /><embed type="application/x-shockwave-flash" width="425" height="344" src="http://www.youtube.com/v/-zh6yDyasSo&amp;hl=en&amp;fs=1" allowfullscreen="true"></embed></object></div>
+My implementation, uses the plug-in capabilities of JMF to extend a custom renderer that does a pixel type conversion and rendering to a texture.
 
 This custom renderer works with RGB textures, a type I seemed to made work on my two test machines:
 
