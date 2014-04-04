@@ -2,9 +2,22 @@
   background: #2E2E2E;
   color: #BABABA;
 
+  .content {
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
   .github-link, .blog-link, .twitter-link, .linkedin-link {
     font-size: 4em;
     margin-right: 0.5em;
+    color: #BABABA;
+
+    &:hover {
+      color: #BC7634;
+      text-decoration: none;
+    }
   }
 
   .github-link { @include replace-by-icon($GITHUB_ICON) };
@@ -23,13 +36,6 @@
 
   }
 
-  .me {
-    width: 70%;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-top: 100px;
-  }
-
   h1 {
     font-family: 'code_lightregular';
     color: #BC7634;
@@ -38,15 +44,15 @@
   }
 
   a {
-    color: #BABABA;
+    color: #BC7634;
     text-decoration: none;
     @include transition-property(color);
     @include transition-duration(0.1s);
     @include transition-timing-function(ease-out);
 
     &:hover {
-      color: #BC7634;
-    };
+      text-decoration: underline;
+    }
   }
 
   strong {
@@ -56,6 +62,6 @@
 
   p {
     font-size: 1em;
-    line-height: 1.4em;
+    line-height: 1.5em;
   }
 }
