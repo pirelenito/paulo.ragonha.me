@@ -1,5 +1,5 @@
 ---
-title: 'A última profissão do mundo - postmortem'
+title: 'A última profissão do mundo'
 date: 2013/10/08
 read_more: false
 ---
