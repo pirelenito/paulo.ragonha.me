@@ -14,4 +14,3 @@ I currently work at [Bravi](http://bravi.com.br) with Node.js, Python and Machin
 <a class='github-link' href="http://github.com/pirelenito" title='GitHub'><span>GitHub</span></a>
 <a class='twitter-link' href="http://twitter.com/pirelenito" title='Twitter'><span>Twitter</span></a>
 <a class='linkedin-link' href="http://linkedin.com/in/pirelenito" title='LinkedIn'><span>LinkedIn</span></a>
-<div class="avatar"></div>
