@@ -1,6 +1,11 @@
+# paulo.ragonha.me
 
-== Fonts ==
-http://www.behance.net/gallery/CODE-free-font/530336
-http://icons.marekventur.de/
+This is my personal blog.
 
-http://fontfabric.com/lovelo-font/
+Built using [Middleman](http://middlemanapp.com/).
+
+## fonts faces
+
+* http://www.behance.net/gallery/CODE-free-font/530336
+* http://icons.marekventur.de/
+* http://fontfabric.com/lovelo-font/
