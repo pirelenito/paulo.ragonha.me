@@ -1,7 +1,7 @@
 .blog_index {
   ol {
     width: 90%;
-    max-width: 650px;
+    max-width: 750px;
     margin: 0 auto;
     list-style-type: none;
     padding: 0;
@@ -13,13 +13,8 @@ article {
   h1 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 2em;
-    margin-bottom: 0.3em;
+    line-height: 1.2em;
     color: #BC7634;
-  }
-
-  p {
-    font-size: 1.2em;
-    line-height: 1.4;
   }
 
   .publish-date {
@@ -38,7 +33,7 @@ article {
 }
 
 .blog {
-  background: #FFFFFF;
+  background: #eee;
 
   a {
     color: #BC7634;
@@ -56,12 +51,7 @@ article {
     float: right;
 
     @media screen and (max-width: 550px) {
-      float: none;
-
-      a {
-        margin-left: 0;
-        margin-right: 0.5em;
-      }
+      display: none;
     }
   }
 
@@ -70,7 +60,7 @@ article {
 
     text-decoration: none;
     margin-left: 0.5em;
-    color: white;
+    color: #BABABA;
 
     &:hover {
       color: white;
@@ -83,15 +73,15 @@ article {
   .rss-link { @include replace-by-icon($RSS_ICON) };
 
   .header-container {
-    background: #2B7199;
+    background: #2E2E2E;
     margin-bottom: 2em;
   }
 
   .header {
     width: 90%;
-    max-width: 650px;
+    max-width: 750px;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 0.5em 0;
 
     a:hover { text-decoration: none; }
 
