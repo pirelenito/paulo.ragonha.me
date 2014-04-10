@@ -10,6 +10,8 @@ You can check my [Jasmine JavaScript Testing](http://www.amazon.com/Jasmine-Java
 
 I currently work at [Bravi](http://bravi.com.br) with Node.js, Python and Machine Learning.
 
+In the past I've worked at [Globo.com](http://globo.com) and [Oncast](http://www.oncast.com.br) doing mostly web development with Ruby and JavaScript.
+
 <a class='blog-link' href="blog" title='Blog'><span>Blog</span></a>
 <a class='github-link' href="http://github.com/pirelenito" title='GitHub'><span>GitHub</span></a>
 <a class='twitter-link' href="http://twitter.com/pirelenito" title='Twitter'><span>Twitter</span></a>
