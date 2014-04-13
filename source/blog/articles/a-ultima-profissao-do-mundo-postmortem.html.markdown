@@ -17,7 +17,7 @@ Em conclusão, havia deixado uma mensagem sarcastica de que a automação iria n
 Essa é a versão da palestra que você vai encontrar abaixo:
 
 <a href="/talks/a-ultima-profissao-do-mundo/">
-  <img src="/blog/2013-10-08-a-ultima-profissao-do-mundo-postmortem/slides.png">
+  <img src="/blog/articles/a-ultima-profissao-do-mundo-postmortem/slides.png">
 </a>
 
 Livros mencionados:

@@ -13,6 +13,6 @@ The talk covers [Jasmine](http://pivotal.github.io/jasmine/), [Grunt](http://gru
 Be sure to check the slides bellow:
 
 <a href="/tdc2013/jasmine">
-  <img src="/blog/2013-05-27-tdc-2013-talk-on-be-a-pro-with-jasmine/slides.png">
+  <img src="/blog/articles/tdc-2013-talk-on-be-a-pro-with-jasmine/slides.png">
 </a>
 

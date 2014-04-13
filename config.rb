@@ -11,6 +11,7 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.layout = "blog"
   blog.permalink = ":year/:month/:title.html"
+  blog.sources = "articles/:title.html"
 end
 page "/blog/feed.xml", :layout => false
 
