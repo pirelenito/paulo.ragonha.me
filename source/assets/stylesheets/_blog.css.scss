@@ -9,12 +9,17 @@
 }
 
 article {
-  margin-bottom: 80px;
+  @include box-sizing(border-box);
+  background: white;
+  padding: 2em;
+  margin-bottom: 40px;
+
   h1 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 2em;
     line-height: 1.2em;
     color: #BC7634;
+    margin-top: 0;
   }
 
   .publish-date {
@@ -98,6 +103,7 @@ article {
   article {
     width: 90%;
     max-width: 750px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
